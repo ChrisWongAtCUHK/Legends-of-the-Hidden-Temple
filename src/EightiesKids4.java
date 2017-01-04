@@ -10,7 +10,7 @@ public class EightiesKids4 {
 		  // center X, only one
 		  String result = String.format("%sX\n", new String(new char[leftSpaceCount]).replace("\0", " "));
 		  
-		  for(int i = 1; i <= (int)(n / 2); i++){		// start from 1, end after looping half of n
+		  while(leftSpaceCount > 0){		// tricky while loop, leftSpaceCount is always equal to 0 at the end
 			  String line =  
 					  String.format("%sX%sX\n", 		// 2 Xs with spaces
 							  new String(new char[leftSpaceCount - 2]).replace("\0", " "),	// left spaces before first X
